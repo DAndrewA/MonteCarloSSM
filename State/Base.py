@@ -14,7 +14,7 @@ class BaseState:
     Methods:
         __init__:
             initialise the state. This will take the inputs n_dims, initS, recordTrajectory.
-        evolve_true:
+        evolve:
             function to evolve the state based on some evolution function and a noise term.
         make_measurement:
             function to make a measurement on the current state vector, dependant on the measurement relation and some noise term.
@@ -41,7 +41,7 @@ class BaseState:
         
         return None
 
-    def evolve_true(self,**kwargs):
+    def evolve(self,**kwargs):
         '''Evolves the state depending on a given function, with some noise applied too.
         
         In the base class, this will simply be no evolution with normally distributed Gaussian noise being applied.

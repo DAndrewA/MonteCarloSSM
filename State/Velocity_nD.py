@@ -16,7 +16,6 @@ class Velocity_nD(BaseState):
 
         self.n_dims_r = initP.shape[0]
         initS = np.hstack((initP,initV))
-        print(initS)
         super().__init__(initS,recordTrajectory)
 
         return None
