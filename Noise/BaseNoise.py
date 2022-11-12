@@ -8,12 +8,12 @@ class BaseNoise:
         pdf(x): function that returns the probability density of the given noise vector x
     '''
 
-    def sample():
+    def sample(self):
         '''function that returns a random noise vector based on the distribution.'''
         # in the Base case, return a None object
         return None
 
-    def pdf(x):
+    def pdf(self,x):
         '''Return the probability density of attaining the vector x in the random noise process'''
         # in the Base case, return a None object
         return None
